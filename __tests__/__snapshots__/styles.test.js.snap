@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`children can be colored with a hex 1`] = `
+Object {
+  "back": "ff0000",
+  "bold": undefined,
+  "border": undefined,
+  "borderColor": false,
+  "borderSize": undefined,
+  "color": "ffffff",
+  "font_face": undefined,
+  "font_size": undefined,
+  "highlight": false,
+  "italic": undefined,
+  "link": undefined,
+  "underline": undefined,
+}
+`;
+
+exports[`children can be styled 1`] = `
+Object {
+  "back": "ff0000",
+  "bold": true,
+  "border": true,
+  "borderColor": "ffff33",
+  "borderSize": "40",
+  "color": "ffffff",
+  "font_face": "Tahoma",
+  "font_size": "40",
+  "highlight": "ff2222",
+  "italic": true,
+  "link": "www.google.com",
+  "underline": true,
+}
+`;
+
+exports[`image size can be adjusted with style prop 1`] = `
+Object {
+  "cx": 200,
+  "cy": 200,
+}
+`;
+
+exports[`image size can be adjusted with width and height prop 1`] = `
+Object {
+  "cx": 200,
+  "cy": 200,
+}
+`;
+
+exports[`table styles can be serialized according to open office xml layout 1`] = `
+Object {
+  "align": "center",
+  "b": true,
+  "cellColWidth": 4261,
+  "color": "ffe4e1",
+  "fill": "ffffff",
+  "fontFamily": "Tahoma",
+  "sz": "20",
+  "vAlign": "center",
+}
+`;

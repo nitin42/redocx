@@ -1,0 +1,1570 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should add a line break 1`] = `
+WordDocument {
+  "doc": officegen {
+    "_events": Object {
+      "afterGen": [Function],
+      "beforeGen": [Function],
+      "clearData": [Function],
+      "clearDoc": [Function],
+      "clearDocType": [Function],
+    },
+    "_eventsCount": 5,
+    "_maxListeners": undefined,
+    "addPageBreak": [Function],
+    "addResourceToParse": [Function],
+    "cbMakeDocxDocument": [Function],
+    "createByJson": [Function],
+    "createJson": [Function],
+    "createListOfDots": [Function],
+    "createListOfNumbers": [Function],
+    "createP": [Function],
+    "createTable": [Function],
+    "data": Array [],
+    "domain": null,
+    "generate": [Function],
+    "getFooter": [Function],
+    "getHeader": [Function],
+    "info": Object {
+      "cp:category": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:category",
+      },
+      "cp:contentStatus": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:contentStatus",
+      },
+      "cp:keywords": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:keywords",
+      },
+      "dc:description": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:description",
+      },
+      "dc:subject": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:subject",
+      },
+      "dc:title": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:title",
+      },
+    },
+    "options": Object {
+      "type": "docx",
+    },
+    "putPageBreak": [Function],
+    "setDescription": [Function],
+    "setDocCategory": [Function],
+    "setDocKeywords": [Function],
+    "setDocStatus": [Function],
+    "setDocSubject": [Function],
+    "setDocTitle": [Function],
+    "setTheme": [Function],
+    "startNewDoc": [Function],
+    "theme": null,
+  },
+  "document": LineBreak {
+    "name": "LineBreak",
+    "prop": Object {},
+    "root": [Circular],
+  },
+}
+`;
+
+exports[`should add a line break when called inside a Text component 1`] = `
+WordDocument {
+  "doc": officegen {
+    "_events": Object {
+      "afterGen": [Function],
+      "beforeGen": [Function],
+      "clearData": [Function],
+      "clearDoc": [Function],
+      "clearDocType": [Function],
+    },
+    "_eventsCount": 5,
+    "_maxListeners": undefined,
+    "addPageBreak": [Function],
+    "addResourceToParse": [Function],
+    "cbMakeDocxDocument": [Function],
+    "createByJson": [Function],
+    "createJson": [Function],
+    "createListOfDots": [Function],
+    "createListOfNumbers": [Function],
+    "createP": [Function],
+    "createTable": [Function],
+    "data": Array [
+      MakeDocxP {
+        "data": Array [],
+        "docType": "docx",
+        "extraSettings": Object {},
+        "filesList": Array [
+          Object {
+            "clear": "type",
+            "ext": "rels",
+            "type": "application/vnd.openxmlformats-package.relationships+xml",
+          },
+          Object {
+            "clear": "type",
+            "ext": "xml",
+            "type": "application/xml",
+          },
+          Object {
+            "clear": "type",
+            "ext": "jpeg",
+            "type": "image/jpeg",
+          },
+          Object {
+            "clear": "type",
+            "ext": "png",
+            "type": "image/png",
+          },
+          Object {
+            "clear": "type",
+            "ext": "gif",
+            "type": "image/gif",
+          },
+          Object {
+            "clear": "type",
+            "name": "/docProps/app.xml",
+            "type": "application/vnd.openxmlformats-officedocument.extended-properties+xml",
+          },
+          Object {
+            "clear": "type",
+            "name": "/word/theme/theme1.xml",
+            "type": "application/vnd.openxmlformats-officedocument.theme+xml",
+          },
+          Object {
+            "clear": "type",
+            "name": "/docProps/core.xml",
+            "type": "application/vnd.openxmlformats-package.core-properties+xml",
+          },
+          Object {
+            "clear": "type",
+            "name": "/word/settings.xml",
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml",
+          },
+          Object {
+            "clear": "type",
+            "name": "/word/fontTable.xml",
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml",
+          },
+          Object {
+            "clear": "type",
+            "name": "/word/webSettings.xml",
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml",
+          },
+          Object {
+            "clear": "type",
+            "name": "/word/styles.xml",
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml",
+          },
+          Object {
+            "clear": "type",
+            "name": "/word/document.xml",
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml",
+          },
+          Object {
+            "clear": "type",
+            "name": "/word/numbering.xml",
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml",
+          },
+        ],
+        "genPrivate": Object {
+          "features": Object {
+            "outputType": "zip",
+            "type": Object {
+              "docx": MakeDocPluginapi {
+                "callbacksList": Object {
+                  "beforeGen": Array [
+                    [Function],
+                  ],
+                  "makeDocApi": Array [
+                    [Function],
+                  ],
+                },
+                "defValuesFunc": [Function],
+                "docType": "docx",
+                "genPrivate": [Circular],
+                "genobj": [Circular],
+                "ogPluginsApi": Object {
+                  "intAddAnyResourceToParse": [Function],
+                  "type": Object {
+                    "msoffice": Object {
+                      "addInfoType": [Function],
+                      "cbMakeMsOfficeBasicXml": [Function],
+                      "cbMakeRels": [Function],
+                      "makeOfficeGenerator": [Function],
+                      "makeUniqueID": [Function],
+                    },
+                  },
+                },
+                "plugsList": Array [
+                  MakeHeadfootPlugin {
+                    "docxData": Object {},
+                    "filesList": Array [
+                      Object {
+                        "clear": "type",
+                        "ext": "rels",
+                        "type": "application/vnd.openxmlformats-package.relationships+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "ext": "xml",
+                        "type": "application/xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "ext": "jpeg",
+                        "type": "image/jpeg",
+                      },
+                      Object {
+                        "clear": "type",
+                        "ext": "png",
+                        "type": "image/png",
+                      },
+                      Object {
+                        "clear": "type",
+                        "ext": "gif",
+                        "type": "image/gif",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/docProps/app.xml",
+                        "type": "application/vnd.openxmlformats-officedocument.extended-properties+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/word/theme/theme1.xml",
+                        "type": "application/vnd.openxmlformats-officedocument.theme+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/docProps/core.xml",
+                        "type": "application/vnd.openxmlformats-package.core-properties+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/word/settings.xml",
+                        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/word/fontTable.xml",
+                        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/word/webSettings.xml",
+                        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/word/styles.xml",
+                        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/word/document.xml",
+                        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml",
+                      },
+                      Object {
+                        "clear": "type",
+                        "name": "/word/numbering.xml",
+                        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml",
+                      },
+                    ],
+                    "mainPath": "word",
+                    "mainPathFile": "document",
+                    "msPluginsApi": Object {
+                      "addInfoType": [Function],
+                      "cbMakeMsOfficeBasicXml": [Function],
+                      "cbMakeRels": [Function],
+                      "makeOfficeGenerator": [Function],
+                      "makeUniqueID": [Function],
+                    },
+                    "ogPluginsApi": Object {
+                      "intAddAnyResourceToParse": [Function],
+                      "type": Object {
+                        "msoffice": Object {
+                          "addInfoType": [Function],
+                          "cbMakeMsOfficeBasicXml": [Function],
+                          "cbMakeRels": [Function],
+                          "makeOfficeGenerator": [Function],
+                          "makeUniqueID": [Function],
+                        },
+                      },
+                    },
+                    "pluginsman": [Circular],
+                    "relsApp": Array [
+                      Object {
+                        "clear": "type",
+                        "target": "styles.xml",
+                        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+                      },
+                      Object {
+                        "clear": "type",
+                        "target": "settings.xml",
+                        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings",
+                      },
+                      Object {
+                        "clear": "type",
+                        "target": "webSettings.xml",
+                        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings",
+                      },
+                      Object {
+                        "clear": "type",
+                        "target": "fontTable.xml",
+                        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable",
+                      },
+                      Object {
+                        "clear": "type",
+                        "target": "theme/theme1.xml",
+                        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+                      },
+                      Object {
+                        "clear": "type",
+                        "target": "numbering.xml",
+                        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering",
+                      },
+                    ],
+                    "relsMain": Array [
+                      Object {
+                        "clear": "type",
+                        "target": "docProps/app.xml",
+                        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+                      },
+                      Object {
+                        "clear": "type",
+                        "target": "docProps/core.xml",
+                        "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+                      },
+                      Object {
+                        "clear": "type",
+                        "target": "word/document.xml",
+                        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+                      },
+                    ],
+                    "srcFilesList": Array [],
+                  },
+                ],
+              },
+              "msoffice": Object {
+                "main_path": "word",
+                "main_path_file": "document",
+              },
+            },
+          },
+          "length": 0,
+          "pages": Array [],
+          "plugs": Object {
+            "intAddAnyResourceToParse": [Function],
+            "type": Object {
+              "msoffice": Object {
+                "addInfoType": [Function],
+                "cbMakeMsOfficeBasicXml": [Function],
+                "cbMakeRels": [Function],
+                "makeOfficeGenerator": [Function],
+                "makeUniqueID": [Function],
+              },
+            },
+          },
+          "resources": Array [
+            Object {
+              "callback": [Function],
+              "data": Array [
+                Object {
+                  "clear": "type",
+                  "target": "docProps/app.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "docProps/core.xml",
+                  "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "word/document.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+                },
+              ],
+              "is_perment": true,
+              "name": "_rels\\\\.rels",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "[Content_Types].xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "docProps\\\\core.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "word\\\\theme\\\\theme1.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "docProps\\\\app.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "word\\\\fontTable.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "word\\\\settings.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "word\\\\webSettings.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "word\\\\styles.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": Object {
+                "data": [Circular],
+                "docEndExtra": "</w:body>",
+                "docStartExtra": "<w:body>",
+                "docType": "document",
+              },
+              "is_perment": true,
+              "name": "word\\\\document.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": null,
+              "is_perment": true,
+              "name": "word\\\\numbering.xml",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+            Object {
+              "callback": [Function],
+              "data": Array [
+                Object {
+                  "clear": "type",
+                  "target": "styles.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "settings.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "webSettings.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "fontTable.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "theme/theme1.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "numbering.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering",
+                },
+              ],
+              "is_perment": true,
+              "name": "word\\\\_rels\\\\document.xml.rels",
+              "removed_after_used": false,
+              "type": "buffer",
+            },
+          ],
+          "type": Object {
+            "docx": Object {},
+            "msoffice": Object {
+              "files_list": Array [
+                Object {
+                  "clear": "type",
+                  "ext": "rels",
+                  "type": "application/vnd.openxmlformats-package.relationships+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "ext": "xml",
+                  "type": "application/xml",
+                },
+                Object {
+                  "clear": "type",
+                  "ext": "jpeg",
+                  "type": "image/jpeg",
+                },
+                Object {
+                  "clear": "type",
+                  "ext": "png",
+                  "type": "image/png",
+                },
+                Object {
+                  "clear": "type",
+                  "ext": "gif",
+                  "type": "image/gif",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/docProps/app.xml",
+                  "type": "application/vnd.openxmlformats-officedocument.extended-properties+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/word/theme/theme1.xml",
+                  "type": "application/vnd.openxmlformats-officedocument.theme+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/docProps/core.xml",
+                  "type": "application/vnd.openxmlformats-package.core-properties+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/word/settings.xml",
+                  "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/word/fontTable.xml",
+                  "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/word/webSettings.xml",
+                  "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/word/styles.xml",
+                  "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/word/document.xml",
+                  "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml",
+                },
+                Object {
+                  "clear": "type",
+                  "name": "/word/numbering.xml",
+                  "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml",
+                },
+              ],
+              "rels_app": Array [
+                Object {
+                  "clear": "type",
+                  "target": "styles.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "settings.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "webSettings.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "fontTable.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "theme/theme1.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "numbering.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering",
+                },
+              ],
+              "rels_main": Array [
+                Object {
+                  "clear": "type",
+                  "target": "docProps/app.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "docProps/core.xml",
+                  "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+                },
+                Object {
+                  "clear": "type",
+                  "target": "word/document.xml",
+                  "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+                },
+              ],
+              "src_files_list": Array [],
+            },
+          },
+        },
+        "genobj": [Circular],
+        "mainPath": "word",
+        "mainPathFile": "document",
+        "msPluginsApi": Object {
+          "addInfoType": [Function],
+          "cbMakeMsOfficeBasicXml": [Function],
+          "cbMakeRels": [Function],
+          "makeOfficeGenerator": [Function],
+          "makeUniqueID": [Function],
+        },
+        "ogPluginsApi": Object {
+          "intAddAnyResourceToParse": [Function],
+          "type": Object {
+            "msoffice": Object {
+              "addInfoType": [Function],
+              "cbMakeMsOfficeBasicXml": [Function],
+              "cbMakeRels": [Function],
+              "makeOfficeGenerator": [Function],
+              "makeUniqueID": [Function],
+            },
+          },
+        },
+        "options": Object {},
+        "relsApp": Array [
+          Object {
+            "clear": "type",
+            "target": "styles.xml",
+            "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+          },
+          Object {
+            "clear": "type",
+            "target": "settings.xml",
+            "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings",
+          },
+          Object {
+            "clear": "type",
+            "target": "webSettings.xml",
+            "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings",
+          },
+          Object {
+            "clear": "type",
+            "target": "fontTable.xml",
+            "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable",
+          },
+          Object {
+            "clear": "type",
+            "target": "theme/theme1.xml",
+            "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+          },
+          Object {
+            "clear": "type",
+            "target": "numbering.xml",
+            "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering",
+          },
+        ],
+        "relsMain": Array [
+          Object {
+            "clear": "type",
+            "target": "docProps/app.xml",
+            "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+          },
+          Object {
+            "clear": "type",
+            "target": "docProps/core.xml",
+            "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+          },
+          Object {
+            "clear": "type",
+            "target": "word/document.xml",
+            "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+          },
+        ],
+        "srcFilesList": Array [],
+      },
+    ],
+    "domain": null,
+    "generate": [Function],
+    "getFooter": [Function],
+    "getHeader": [Function],
+    "info": Object {
+      "cp:category": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:category",
+      },
+      "cp:contentStatus": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:contentStatus",
+      },
+      "cp:keywords": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:keywords",
+      },
+      "dc:description": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:description",
+      },
+      "dc:subject": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:subject",
+      },
+      "dc:title": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:title",
+      },
+    },
+    "options": Object {
+      "type": "docx",
+    },
+    "putPageBreak": [Function],
+    "setDescription": [Function],
+    "setDocCategory": [Function],
+    "setDocKeywords": [Function],
+    "setDocStatus": [Function],
+    "setDocSubject": [Function],
+    "setDocTitle": [Function],
+    "setTheme": [Function],
+    "startNewDoc": [Function],
+    "theme": null,
+  },
+  "document": Text {
+    "adder": MakeDocxP {
+      "data": Array [],
+      "docType": "docx",
+      "extraSettings": Object {},
+      "filesList": Array [
+        Object {
+          "clear": "type",
+          "ext": "rels",
+          "type": "application/vnd.openxmlformats-package.relationships+xml",
+        },
+        Object {
+          "clear": "type",
+          "ext": "xml",
+          "type": "application/xml",
+        },
+        Object {
+          "clear": "type",
+          "ext": "jpeg",
+          "type": "image/jpeg",
+        },
+        Object {
+          "clear": "type",
+          "ext": "png",
+          "type": "image/png",
+        },
+        Object {
+          "clear": "type",
+          "ext": "gif",
+          "type": "image/gif",
+        },
+        Object {
+          "clear": "type",
+          "name": "/docProps/app.xml",
+          "type": "application/vnd.openxmlformats-officedocument.extended-properties+xml",
+        },
+        Object {
+          "clear": "type",
+          "name": "/word/theme/theme1.xml",
+          "type": "application/vnd.openxmlformats-officedocument.theme+xml",
+        },
+        Object {
+          "clear": "type",
+          "name": "/docProps/core.xml",
+          "type": "application/vnd.openxmlformats-package.core-properties+xml",
+        },
+        Object {
+          "clear": "type",
+          "name": "/word/settings.xml",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml",
+        },
+        Object {
+          "clear": "type",
+          "name": "/word/fontTable.xml",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml",
+        },
+        Object {
+          "clear": "type",
+          "name": "/word/webSettings.xml",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml",
+        },
+        Object {
+          "clear": "type",
+          "name": "/word/styles.xml",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml",
+        },
+        Object {
+          "clear": "type",
+          "name": "/word/document.xml",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml",
+        },
+        Object {
+          "clear": "type",
+          "name": "/word/numbering.xml",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml",
+        },
+      ],
+      "genPrivate": Object {
+        "features": Object {
+          "outputType": "zip",
+          "type": Object {
+            "docx": MakeDocPluginapi {
+              "callbacksList": Object {
+                "beforeGen": Array [
+                  [Function],
+                ],
+                "makeDocApi": Array [
+                  [Function],
+                ],
+              },
+              "defValuesFunc": [Function],
+              "docType": "docx",
+              "genPrivate": [Circular],
+              "genobj": officegen {
+                "_events": Object {
+                  "afterGen": [Function],
+                  "beforeGen": [Function],
+                  "clearData": [Function],
+                  "clearDoc": [Function],
+                  "clearDocType": [Function],
+                },
+                "_eventsCount": 5,
+                "_maxListeners": undefined,
+                "addPageBreak": [Function],
+                "addResourceToParse": [Function],
+                "cbMakeDocxDocument": [Function],
+                "createByJson": [Function],
+                "createJson": [Function],
+                "createListOfDots": [Function],
+                "createListOfNumbers": [Function],
+                "createP": [Function],
+                "createTable": [Function],
+                "data": Array [
+                  [Circular],
+                ],
+                "domain": null,
+                "generate": [Function],
+                "getFooter": [Function],
+                "getHeader": [Function],
+                "info": Object {
+                  "cp:category": Object {
+                    "data": "",
+                    "def_data": "",
+                    "element": "cp:category",
+                  },
+                  "cp:contentStatus": Object {
+                    "data": "",
+                    "def_data": "",
+                    "element": "cp:contentStatus",
+                  },
+                  "cp:keywords": Object {
+                    "data": "",
+                    "def_data": "",
+                    "element": "cp:keywords",
+                  },
+                  "dc:description": Object {
+                    "data": "",
+                    "def_data": "",
+                    "element": "dc:description",
+                  },
+                  "dc:subject": Object {
+                    "data": "",
+                    "def_data": "",
+                    "element": "dc:subject",
+                  },
+                  "dc:title": Object {
+                    "data": "",
+                    "def_data": "",
+                    "element": "dc:title",
+                  },
+                },
+                "options": Object {
+                  "type": "docx",
+                },
+                "putPageBreak": [Function],
+                "setDescription": [Function],
+                "setDocCategory": [Function],
+                "setDocKeywords": [Function],
+                "setDocStatus": [Function],
+                "setDocSubject": [Function],
+                "setDocTitle": [Function],
+                "setTheme": [Function],
+                "startNewDoc": [Function],
+                "theme": null,
+              },
+              "ogPluginsApi": Object {
+                "intAddAnyResourceToParse": [Function],
+                "type": Object {
+                  "msoffice": Object {
+                    "addInfoType": [Function],
+                    "cbMakeMsOfficeBasicXml": [Function],
+                    "cbMakeRels": [Function],
+                    "makeOfficeGenerator": [Function],
+                    "makeUniqueID": [Function],
+                  },
+                },
+              },
+              "plugsList": Array [
+                MakeHeadfootPlugin {
+                  "docxData": Object {},
+                  "filesList": Array [
+                    Object {
+                      "clear": "type",
+                      "ext": "rels",
+                      "type": "application/vnd.openxmlformats-package.relationships+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "ext": "xml",
+                      "type": "application/xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "ext": "jpeg",
+                      "type": "image/jpeg",
+                    },
+                    Object {
+                      "clear": "type",
+                      "ext": "png",
+                      "type": "image/png",
+                    },
+                    Object {
+                      "clear": "type",
+                      "ext": "gif",
+                      "type": "image/gif",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/docProps/app.xml",
+                      "type": "application/vnd.openxmlformats-officedocument.extended-properties+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/word/theme/theme1.xml",
+                      "type": "application/vnd.openxmlformats-officedocument.theme+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/docProps/core.xml",
+                      "type": "application/vnd.openxmlformats-package.core-properties+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/word/settings.xml",
+                      "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/word/fontTable.xml",
+                      "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/word/webSettings.xml",
+                      "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/word/styles.xml",
+                      "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/word/document.xml",
+                      "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml",
+                    },
+                    Object {
+                      "clear": "type",
+                      "name": "/word/numbering.xml",
+                      "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml",
+                    },
+                  ],
+                  "mainPath": "word",
+                  "mainPathFile": "document",
+                  "msPluginsApi": Object {
+                    "addInfoType": [Function],
+                    "cbMakeMsOfficeBasicXml": [Function],
+                    "cbMakeRels": [Function],
+                    "makeOfficeGenerator": [Function],
+                    "makeUniqueID": [Function],
+                  },
+                  "ogPluginsApi": Object {
+                    "intAddAnyResourceToParse": [Function],
+                    "type": Object {
+                      "msoffice": Object {
+                        "addInfoType": [Function],
+                        "cbMakeMsOfficeBasicXml": [Function],
+                        "cbMakeRels": [Function],
+                        "makeOfficeGenerator": [Function],
+                        "makeUniqueID": [Function],
+                      },
+                    },
+                  },
+                  "pluginsman": [Circular],
+                  "relsApp": Array [
+                    Object {
+                      "clear": "type",
+                      "target": "styles.xml",
+                      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+                    },
+                    Object {
+                      "clear": "type",
+                      "target": "settings.xml",
+                      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings",
+                    },
+                    Object {
+                      "clear": "type",
+                      "target": "webSettings.xml",
+                      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings",
+                    },
+                    Object {
+                      "clear": "type",
+                      "target": "fontTable.xml",
+                      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable",
+                    },
+                    Object {
+                      "clear": "type",
+                      "target": "theme/theme1.xml",
+                      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+                    },
+                    Object {
+                      "clear": "type",
+                      "target": "numbering.xml",
+                      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering",
+                    },
+                  ],
+                  "relsMain": Array [
+                    Object {
+                      "clear": "type",
+                      "target": "docProps/app.xml",
+                      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+                    },
+                    Object {
+                      "clear": "type",
+                      "target": "docProps/core.xml",
+                      "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+                    },
+                    Object {
+                      "clear": "type",
+                      "target": "word/document.xml",
+                      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+                    },
+                  ],
+                  "srcFilesList": Array [],
+                },
+              ],
+            },
+            "msoffice": Object {
+              "main_path": "word",
+              "main_path_file": "document",
+            },
+          },
+        },
+        "length": 0,
+        "pages": Array [],
+        "plugs": Object {
+          "intAddAnyResourceToParse": [Function],
+          "type": Object {
+            "msoffice": Object {
+              "addInfoType": [Function],
+              "cbMakeMsOfficeBasicXml": [Function],
+              "cbMakeRels": [Function],
+              "makeOfficeGenerator": [Function],
+              "makeUniqueID": [Function],
+            },
+          },
+        },
+        "resources": Array [
+          Object {
+            "callback": [Function],
+            "data": Array [
+              Object {
+                "clear": "type",
+                "target": "docProps/app.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+              },
+              Object {
+                "clear": "type",
+                "target": "docProps/core.xml",
+                "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+              },
+              Object {
+                "clear": "type",
+                "target": "word/document.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+              },
+            ],
+            "is_perment": true,
+            "name": "_rels\\\\.rels",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "[Content_Types].xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "docProps\\\\core.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "word\\\\theme\\\\theme1.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "docProps\\\\app.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "word\\\\fontTable.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "word\\\\settings.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "word\\\\webSettings.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "word\\\\styles.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": Object {
+              "data": Array [
+                [Circular],
+              ],
+              "docEndExtra": "</w:body>",
+              "docStartExtra": "<w:body>",
+              "docType": "document",
+            },
+            "is_perment": true,
+            "name": "word\\\\document.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": null,
+            "is_perment": true,
+            "name": "word\\\\numbering.xml",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+          Object {
+            "callback": [Function],
+            "data": Array [
+              Object {
+                "clear": "type",
+                "target": "styles.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+              },
+              Object {
+                "clear": "type",
+                "target": "settings.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings",
+              },
+              Object {
+                "clear": "type",
+                "target": "webSettings.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings",
+              },
+              Object {
+                "clear": "type",
+                "target": "fontTable.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable",
+              },
+              Object {
+                "clear": "type",
+                "target": "theme/theme1.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+              },
+              Object {
+                "clear": "type",
+                "target": "numbering.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering",
+              },
+            ],
+            "is_perment": true,
+            "name": "word\\\\_rels\\\\document.xml.rels",
+            "removed_after_used": false,
+            "type": "buffer",
+          },
+        ],
+        "type": Object {
+          "docx": Object {},
+          "msoffice": Object {
+            "files_list": Array [
+              Object {
+                "clear": "type",
+                "ext": "rels",
+                "type": "application/vnd.openxmlformats-package.relationships+xml",
+              },
+              Object {
+                "clear": "type",
+                "ext": "xml",
+                "type": "application/xml",
+              },
+              Object {
+                "clear": "type",
+                "ext": "jpeg",
+                "type": "image/jpeg",
+              },
+              Object {
+                "clear": "type",
+                "ext": "png",
+                "type": "image/png",
+              },
+              Object {
+                "clear": "type",
+                "ext": "gif",
+                "type": "image/gif",
+              },
+              Object {
+                "clear": "type",
+                "name": "/docProps/app.xml",
+                "type": "application/vnd.openxmlformats-officedocument.extended-properties+xml",
+              },
+              Object {
+                "clear": "type",
+                "name": "/word/theme/theme1.xml",
+                "type": "application/vnd.openxmlformats-officedocument.theme+xml",
+              },
+              Object {
+                "clear": "type",
+                "name": "/docProps/core.xml",
+                "type": "application/vnd.openxmlformats-package.core-properties+xml",
+              },
+              Object {
+                "clear": "type",
+                "name": "/word/settings.xml",
+                "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml",
+              },
+              Object {
+                "clear": "type",
+                "name": "/word/fontTable.xml",
+                "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml",
+              },
+              Object {
+                "clear": "type",
+                "name": "/word/webSettings.xml",
+                "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml",
+              },
+              Object {
+                "clear": "type",
+                "name": "/word/styles.xml",
+                "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml",
+              },
+              Object {
+                "clear": "type",
+                "name": "/word/document.xml",
+                "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml",
+              },
+              Object {
+                "clear": "type",
+                "name": "/word/numbering.xml",
+                "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml",
+              },
+            ],
+            "rels_app": Array [
+              Object {
+                "clear": "type",
+                "target": "styles.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+              },
+              Object {
+                "clear": "type",
+                "target": "settings.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings",
+              },
+              Object {
+                "clear": "type",
+                "target": "webSettings.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings",
+              },
+              Object {
+                "clear": "type",
+                "target": "fontTable.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable",
+              },
+              Object {
+                "clear": "type",
+                "target": "theme/theme1.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+              },
+              Object {
+                "clear": "type",
+                "target": "numbering.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering",
+              },
+            ],
+            "rels_main": Array [
+              Object {
+                "clear": "type",
+                "target": "docProps/app.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+              },
+              Object {
+                "clear": "type",
+                "target": "docProps/core.xml",
+                "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+              },
+              Object {
+                "clear": "type",
+                "target": "word/document.xml",
+                "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+              },
+            ],
+            "src_files_list": Array [],
+          },
+        },
+      },
+      "genobj": officegen {
+        "_events": Object {
+          "afterGen": [Function],
+          "beforeGen": [Function],
+          "clearData": [Function],
+          "clearDoc": [Function],
+          "clearDocType": [Function],
+        },
+        "_eventsCount": 5,
+        "_maxListeners": undefined,
+        "addPageBreak": [Function],
+        "addResourceToParse": [Function],
+        "cbMakeDocxDocument": [Function],
+        "createByJson": [Function],
+        "createJson": [Function],
+        "createListOfDots": [Function],
+        "createListOfNumbers": [Function],
+        "createP": [Function],
+        "createTable": [Function],
+        "data": Array [
+          [Circular],
+        ],
+        "domain": null,
+        "generate": [Function],
+        "getFooter": [Function],
+        "getHeader": [Function],
+        "info": Object {
+          "cp:category": Object {
+            "data": "",
+            "def_data": "",
+            "element": "cp:category",
+          },
+          "cp:contentStatus": Object {
+            "data": "",
+            "def_data": "",
+            "element": "cp:contentStatus",
+          },
+          "cp:keywords": Object {
+            "data": "",
+            "def_data": "",
+            "element": "cp:keywords",
+          },
+          "dc:description": Object {
+            "data": "",
+            "def_data": "",
+            "element": "dc:description",
+          },
+          "dc:subject": Object {
+            "data": "",
+            "def_data": "",
+            "element": "dc:subject",
+          },
+          "dc:title": Object {
+            "data": "",
+            "def_data": "",
+            "element": "dc:title",
+          },
+        },
+        "options": Object {
+          "type": "docx",
+        },
+        "putPageBreak": [Function],
+        "setDescription": [Function],
+        "setDocCategory": [Function],
+        "setDocKeywords": [Function],
+        "setDocStatus": [Function],
+        "setDocSubject": [Function],
+        "setDocTitle": [Function],
+        "setTheme": [Function],
+        "startNewDoc": [Function],
+        "theme": null,
+      },
+      "mainPath": "word",
+      "mainPathFile": "document",
+      "msPluginsApi": Object {
+        "addInfoType": [Function],
+        "cbMakeMsOfficeBasicXml": [Function],
+        "cbMakeRels": [Function],
+        "makeOfficeGenerator": [Function],
+        "makeUniqueID": [Function],
+      },
+      "ogPluginsApi": Object {
+        "intAddAnyResourceToParse": [Function],
+        "type": Object {
+          "msoffice": Object {
+            "addInfoType": [Function],
+            "cbMakeMsOfficeBasicXml": [Function],
+            "cbMakeRels": [Function],
+            "makeOfficeGenerator": [Function],
+            "makeUniqueID": [Function],
+          },
+        },
+      },
+      "options": Object {},
+      "relsApp": Array [
+        Object {
+          "clear": "type",
+          "target": "styles.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+        },
+        Object {
+          "clear": "type",
+          "target": "settings.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings",
+        },
+        Object {
+          "clear": "type",
+          "target": "webSettings.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings",
+        },
+        Object {
+          "clear": "type",
+          "target": "fontTable.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable",
+        },
+        Object {
+          "clear": "type",
+          "target": "theme/theme1.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+        },
+        Object {
+          "clear": "type",
+          "target": "numbering.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering",
+        },
+      ],
+      "relsMain": Array [
+        Object {
+          "clear": "type",
+          "target": "docProps/app.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+        },
+        Object {
+          "clear": "type",
+          "target": "docProps/core.xml",
+          "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+        },
+        Object {
+          "clear": "type",
+          "target": "word/document.xml",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+        },
+      ],
+      "srcFilesList": Array [],
+    },
+    "children": Array [
+      LineBreak {
+        "name": "LineBreak",
+        "prop": Object {},
+        "root": [Circular],
+      },
+    ],
+    "parent": null,
+    "props": Object {
+      "children": <LINEBREAK />,
+    },
+    "root": [Circular],
+    "setParent": [Function],
+  },
+}
+`;

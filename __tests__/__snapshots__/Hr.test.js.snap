@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should draw a horizontal ruler 1`] = `
+WordDocument {
+  "doc": officegen {
+    "_events": Object {
+      "afterGen": [Function],
+      "beforeGen": [Function],
+      "clearData": [Function],
+      "clearDoc": [Function],
+      "clearDocType": [Function],
+    },
+    "_eventsCount": 5,
+    "_maxListeners": undefined,
+    "addPageBreak": [Function],
+    "addResourceToParse": [Function],
+    "cbMakeDocxDocument": [Function],
+    "createByJson": [Function],
+    "createJson": [Function],
+    "createListOfDots": [Function],
+    "createListOfNumbers": [Function],
+    "createP": [Function],
+    "createTable": [Function],
+    "data": Array [],
+    "domain": null,
+    "generate": [Function],
+    "getFooter": [Function],
+    "getHeader": [Function],
+    "info": Object {
+      "cp:category": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:category",
+      },
+      "cp:contentStatus": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:contentStatus",
+      },
+      "cp:keywords": Object {
+        "data": "",
+        "def_data": "",
+        "element": "cp:keywords",
+      },
+      "dc:description": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:description",
+      },
+      "dc:subject": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:subject",
+      },
+      "dc:title": Object {
+        "data": "",
+        "def_data": "",
+        "element": "dc:title",
+      },
+    },
+    "options": Object {
+      "type": "docx",
+    },
+    "putPageBreak": [Function],
+    "setDescription": [Function],
+    "setDocCategory": [Function],
+    "setDocKeywords": [Function],
+    "setDocStatus": [Function],
+    "setDocSubject": [Function],
+    "setDocTitle": [Function],
+    "setTheme": [Function],
+    "startNewDoc": [Function],
+    "theme": null,
+  },
+  "document": Hr {
+    "children": Array [],
+    "name": "Hr",
+    "parent": null,
+    "props": Object {},
+    "root": [Circular],
+  },
+}
+`;
