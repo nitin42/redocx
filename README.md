@@ -77,6 +77,15 @@ Assuming you've already installed [React](https://facebook.github.io/react).
 
 > `redocx` will soon have a new cli to automate this process making it easy to generate word documents with React!
 
+## Demo
+
+```
+git clone https://github.com/nitin42/redocx.git
+cd redocx
+npm install
+npm run example
+```
+
 ## Documentation
 
 See the detailed documentation [here](./docs)
