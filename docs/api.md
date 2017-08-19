@@ -6,7 +6,7 @@
    * [Text](#text-)
    * [List](#list-)
    * [BulletItem](#bulletitem-)
-   * [NumberItem](#numberitem-)
+   * [NumberItem](#numberitem--currently-unstable)
    * [Header](#header-)
    * [Footer](#footer-)
    * [Horizontal Line](#hr-)
