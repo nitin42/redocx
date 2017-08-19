@@ -7,7 +7,7 @@
 > Create word documents with React
 <br/>
 <p align='center'>
-  <img src='./redocx.png' width='500' height='200'/>
+  <img src='./redocx.png' width='450' height='180'/>
 </p>
 
 
