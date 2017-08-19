@@ -51,7 +51,7 @@ See the detailed documentation [here](./docs/documentation.md)
 
 ### Contributing
 
-[Contributing guide](./CONTRIBUTING.md)
+[Contributing guide](./https://github.com/nitin42/redocx/blob/master/CONTRIBUTING.MD)
 
 ### License
 
