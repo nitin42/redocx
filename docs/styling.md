@@ -20,7 +20,7 @@ Below are the style properties for Text, Document, List, Header, Footer, BulletI
 
 `border` can take values `'single'`, `'dashDotStroked'`, `'dashed'`, `'dashSmallGap'`, `'dotDash'`, `'dotDotDash'`, `'dotted'`, `'double'`, `'thick'`, etc.
 
-## Style attributes for <Image /> component
+## Style attributes for <Image \/> component
 
 | Property  | Type | Default | 
 | ------------- | ------------- | ------------- |
