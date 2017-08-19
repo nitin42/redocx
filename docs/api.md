@@ -1,24 +1,24 @@
 # API Reference
 
-* [render]()
-* [Components]()
-   * [Document]()
-   * [Text]()
-   * [List]()
-   * [BulletItem]()
-   * [NumberItem]()
-   * [Header]()
-   * [Footer]()
-   * [Horizontal Line]()
-   * [LineBreak]()
-   * [PageBreak]()
-   * [Table]()
-   * [Image]()
+* [render](#renderelement-filepath)
+* [Components](#components)
+   * [Document](#document-)
+   * [Text](#text-)
+   * [List](#list-)
+   * [BulletItem](#bulletitem-)
+   * [NumberItem](#numberitem--currently-unstable)
+   * [Header](#header-)
+   * [Footer](#footer-)
+   * [Horizontal Line](#hr-)
+   * [LineBreak](#linebreak-)
+   * [PageBreak](#pagebreak-)
+   * [Table](#table-)
+   * [Image](#image-)
 
 
 ## render(element, filepath)
 
-Render a React element into word document with supplied filepath and returns a top-level [document object]().
+Render a React element to word document with supplied filepath and returns a top-level [document object]().
 
 ### parameters
 
@@ -44,7 +44,7 @@ render(<SampleDocument />,  `${__dirname}/example.docx`)
 
 ## Components
 
-### <Document />
+### <Document \/>
 
 Wrapper for the child components.
 
@@ -70,9 +70,9 @@ const DocumentComponent = () => (
   </Document>
 ```
 
-Data you can pass into `info` prop -
+Data that you can pass into `info` prop -
 
-```json
+```
 {
   author: string,
   description: string,
@@ -83,7 +83,7 @@ Data you can pass into `info` prop -
 }
 ```
 
-### <Text />
+### <Text \/>
 
 Creates a new paragraph.
 
@@ -105,7 +105,7 @@ const TextComponent = () => (
 )
 ```
 
-### <List />
+### <List \/>
 
 Wrapper for the list items (list of dots and numbers).
 
@@ -129,7 +129,7 @@ const ListComponent = () => (
 
 ```
 
-### <BulletItem />
+### <BulletItem \/>
 
 Creates a list of dots
 
@@ -152,7 +152,7 @@ const ListDots = () => (
 )
 ```
 
-### <NumberItem /> (Currently unstable)
+### <NumberItem \/> (Currently unstable)
 
 Creates a list of numbers
 
@@ -175,7 +175,7 @@ const ListDots = () => (
 )
 ```
 
-### <Header />
+### <Header \/>
 
 Creates a header for the document
 
@@ -197,7 +197,7 @@ const HeaderComponent = () => (
 )
 ```
 
-### <Footer />
+### <Footer \/>
 
 Creates a footer for the document
 
@@ -219,7 +219,7 @@ const HeaderComponent = () => (
 )
 ```
 
-### \<Hr />
+### <Hr \/>
 
 Draws a horizontal line
 
@@ -229,7 +229,7 @@ Draws a horizontal line
 const DrawHr = () => <Hr />
 ```
 
-### <LineBreak />
+### <LineBreak \/>
 
 Puts a line break
 
@@ -239,7 +239,7 @@ Puts a line break
 const LineBr = () => <LineBreak />
 ```
 
-### <PageBreak />
+### <PageBreak \/>
 
 Puts a page break
 
@@ -249,7 +249,7 @@ Puts a page break
 const PageBr = () => <PageBreak />
 ```
 
-### <Table />
+### <Table \/>
 
 Creates a table
 
@@ -257,8 +257,8 @@ Creates a table
 
 | Prop  | Type | Default | Description |
 | ------------- | ------------- | ------------- | ------------- |
-| `headers`  | `array`   |  `[]` | headings and corresponding styles for each heading (array of objects where each object has two properties, `value` and `styles`) |
-| `data`  | `array`   |  `[]` | data for each heading (array of arrays representing the data for each heading) |
+| `headers`  | `array`   |  `[]` | headings and corresponding style for each heading (array of objects where each object has two properties, `value` and `styles`) |
+| `data`  | `array`   |  `[]` | data for each heading (array of arrays where each array contains data for each heading) |
 | `style`  | `object`   |  `{}` | table styles |
 
 #### Example 
@@ -301,7 +301,7 @@ const TableComponent = () => (
 )
 ```
 
-### <Image />
+### <Image \/>
 
 Adds an image
 
@@ -311,8 +311,8 @@ Adds an image
 | ------------- | ------------- | ------------- | ------------- |
 | `src`  | `string`   |   | image source |
 | `align`  | `string`   |  `left` | align the image |
-| `width`  | `string` \|\| `number`   |   | width of the image |
-| `height`  | `string` \|\| `number`    |  | height of the image |
+| `width`  | `number`   |   | width of the image |
+| `height`  | `number`    |  | height of the image |
 | `style`  | `object`   |  {} | style attributes of the image (height and image)|
 
 

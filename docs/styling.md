@@ -4,8 +4,8 @@
 Below are the style properties for Text, Document, List, Header, Footer, BulletItem and NumberItem components.
 
 | Property  | Type | Default | 
-| ------------- | ------------- | ------------- | -
-| `backgroundColor`  | `string`  | 
+| ------------- | ------------- | ------------- |
+| `backgroundColor`  | `string`  |
 | `bold`  | `boolean`  | `false` |
 | `border`  | `string`  |
 | `borderSize`  | `number`  | 
@@ -18,10 +18,12 @@ Below are the style properties for Text, Document, List, Header, Footer, BulletI
 | `link`  | `string`  |  |
 | `underline` | `boolean` | `false` 
 
-## Style attributes for <Image /> component
+`border` can take values `'single'`, `'dashDotStroked'`, `'dashed'`, `'dashSmallGap'`, `'dotDash'`, `'dotDotDash'`, `'dotted'`, `'double'`, `'thick'`, etc.
+
+## Style attributes for <Image \/> component
 
 | Property  | Type | Default | 
-| ------------- | ------------- | ------------- | -
+| ------------- | ------------- | ------------- |
 | `width`  | `number`  | 
 | `height`  | `number`  |  |
 
@@ -31,12 +33,12 @@ or you can pass a style object describing the image dimensions.
 { width: 200, height: 200 }
 ```
 
-## <Table /> component
+## <Table \/> component
 
 ### Style properties for each heading
 
 | Property  | Type | Default | 
-| ------------- | ------------- | ------------- | -
+| ------------- | ------------- | ------------- |
 | `bold`  | `boolean`  | `false`
 | `size`  | `number`  |  |
 | `color`  | `string`  |  |
@@ -49,7 +51,7 @@ or you can pass a style object describing the image dimensions.
 ### Table styles
 
 | Property  | Type | Default | 
-| ------------- | ------------- | ------------- | -
+| ------------- | ------------- | ------------- |
 | `tableColWidth`  | `number`  | 
 | `tableSize`  | `number`  |  |
 | `tableColor`  | `string`  |  |
