@@ -1,9 +1,13 @@
 # redocx
 
 > Create word documents with React
+<br/>
+<p align='center'>
+  <img src='./redocx.png' width='500' height='200'/>
+</p>
 
 
-### Introduction
+## Introduction
 
 `redocx` is a library which lets you create word documents with React. It provides a set of components which renders your declarative views and components to word documents. 
 
@@ -29,7 +33,7 @@ render(<App />, `${__dirname}/example.docx`)
 Let's get started!
 
 
-### Install
+## Install
 
 **npm**
 
@@ -45,15 +49,15 @@ yarn add redocx
 
 Assuming you've already installed [React](https://facebook.github.io/react).
 
-### Documentation
+## Documentation
 
 See the detailed documentation [here](./docs)
 
-### Contributing
+## Contributing
 
 [Contributing guide](./https://github.com/nitin42/redocx/blob/master/CONTRIBUTING.MD)
 
-### License
+## License
 
 MIT
 
