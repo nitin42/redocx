@@ -30,4 +30,4 @@
   * [Horizontal Line](../examples/Hr.js)
   * [PageBreak](../examples/PageBreak.js)
   * [Table](../examples/Table.js)
-* [Contributing](https://github.com/nitin42/redocx/blob/master/CONTRIBUTING.MD)
+* [Contributing](https://github.com/nitin42/redocx/blob/master/CONTRIBUTING.md)
