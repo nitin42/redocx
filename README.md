@@ -15,7 +15,9 @@
 
 `redocx` is a library which lets you create word documents with React. It provides a set of components which renders your declarative views and components to word documents. 
 
-#### Example - A simple component that renders a "Hello World" text to a word document.
+#### Example 
+
+A simple component that renders a "Hello World" text to a word document.
 
 ```js
 import React from 'react'
@@ -71,7 +73,7 @@ Assuming you've already installed [React](https://facebook.github.io/react).
 
 * Make sure you've installed [`babel-cli`](https://babeljs.io/docs/usage/cli/)
 
-* After configuring babel and assuming you've already created a file `example.js` with [this](#example---a-simple-component-that-renders-a-hello-world-text-to-a-word-document) example, run `babel-node example.js`. This will render your React component to word document.
+* After configuring babel and assuming you've already created a file `example.js` with [this](#example) example, run `babel-node example.js`. This will render your React component to word document.
 
 > `redocx` will soon have a new cli to automate this process making it easy to generate word documents with React!
 
