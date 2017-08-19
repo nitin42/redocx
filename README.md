@@ -1,4 +1,8 @@
 # redocx
+[![Build Status](https://travis-ci.org/nitin42/redocx.svg?branch=master)](https://travis-ci.org/nitin42/redocx)
+![yarn](https://img.shields.io/badge/yarn-0.21.3-blue.svg)
+![license](https://img.shields.io/packagist/l/doctrine/orm.svg)
+![status](https://img.shields.io/badge/status-beta-brightgreen.svg)
 
 > Create word documents with React
 <br/>
@@ -50,6 +54,26 @@ yarn add redocx
 ```
 
 Assuming you've already installed [React](https://facebook.github.io/react).
+
+## Usage
+
+* Create a `.babelrc`
+
+```
+{
+  "presets": [
+    "env",
+    "stage-0",
+    "react"
+  ]
+}
+```
+
+* Make sure you've installed [`babel-cli`](https://babeljs.io/docs/usage/cli/)
+
+* After configuring babel and assuming you've already created a file `example.js`, run `babel-node example.js`. This will render your React component to word document.
+
+> `redocx` will soon have a new cli to automate this process making it easy to render the components without manual configuration 😄
 
 ## Documentation
 
