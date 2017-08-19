@@ -47,7 +47,7 @@ Assuming you've already installed [React](https://facebook.github.io/react).
 
 ### Documentation
 
-See the detailed documentation [here](./documentation.md)
+See the detailed documentation [here](./docs/documentation.md)
 
 ### Contributing
 
