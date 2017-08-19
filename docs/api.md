@@ -44,7 +44,7 @@ render(<SampleDocument />,  `${__dirname}/example.docx`)
 
 ## Components
 
-### <Document />
+### <Document \/>
 
 Wrapper for the child components.
 
@@ -72,7 +72,7 @@ const DocumentComponent = () => (
 
 Data you can pass into `info` prop -
 
-```json
+```
 {
   author: string,
   description: string,
@@ -83,7 +83,7 @@ Data you can pass into `info` prop -
 }
 ```
 
-### <Text />
+### <Text \/>
 
 Creates a new paragraph.
 
@@ -105,7 +105,7 @@ const TextComponent = () => (
 )
 ```
 
-### <List />
+### <List \/>
 
 Wrapper for the list items (list of dots and numbers).
 
@@ -129,7 +129,7 @@ const ListComponent = () => (
 
 ```
 
-### <BulletItem />
+### <BulletItem \/>
 
 Creates a list of dots
 
@@ -152,7 +152,7 @@ const ListDots = () => (
 )
 ```
 
-### <NumberItem /> (Currently unstable)
+### <NumberItem \/> (Currently unstable)
 
 Creates a list of numbers
 
@@ -175,7 +175,7 @@ const ListDots = () => (
 )
 ```
 
-### <Header />
+### <Header \/>
 
 Creates a header for the document
 
@@ -197,7 +197,7 @@ const HeaderComponent = () => (
 )
 ```
 
-### <Footer />
+### <Footer \/>
 
 Creates a footer for the document
 
@@ -219,7 +219,7 @@ const HeaderComponent = () => (
 )
 ```
 
-### \<Hr />
+### <Hr \/>
 
 Draws a horizontal line
 
@@ -229,7 +229,7 @@ Draws a horizontal line
 const DrawHr = () => <Hr />
 ```
 
-### <LineBreak />
+### <LineBreak \/>
 
 Puts a line break
 
@@ -239,7 +239,7 @@ Puts a line break
 const LineBr = () => <LineBreak />
 ```
 
-### <PageBreak />
+### <PageBreak \/>
 
 Puts a page break
 
@@ -249,7 +249,7 @@ Puts a page break
 const PageBr = () => <PageBreak />
 ```
 
-### <Table />
+### <Table \/>
 
 Creates a table
 
@@ -301,7 +301,7 @@ const TableComponent = () => (
 )
 ```
 
-### <Image />
+### <Image \/>
 
 Adds an image
 
