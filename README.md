@@ -35,6 +35,8 @@ Let's get started!
 
 ## Install
 
+> Still in beta
+
 **npm**
 
 ```
