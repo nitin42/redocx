@@ -6,7 +6,7 @@ class TextComponent extends Component {
 		return (
 			<Document>
 				<Text style={{ color: 'red', fontSize: '30' }} align="center">
-					Hello World!
+					Hello World
 				</Text>
 			</Document>
 		);
