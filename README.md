@@ -81,7 +81,7 @@ See the detailed documentation [here](./docs)
 
 ## Contributing
 
-[Contributing guide](./https://github.com/nitin42/redocx/blob/master/CONTRIBUTING.MD)
+[Contributing guide](https://github.com/nitin42/redocx/blob/master/CONTRIBUTING.MD)
 
 ## License
 
