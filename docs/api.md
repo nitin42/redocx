@@ -1,6 +1,6 @@
 # API Reference
 
-* [render]()
+* [render](#renderelement-filepath)
 * [Components]()
    * [Document]()
    * [Text]()
