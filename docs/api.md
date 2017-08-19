@@ -1,24 +1,24 @@
 # API Reference
 
 * [render](#renderelement-filepath)
-* [Components]()
-   * [Document]()
-   * [Text]()
-   * [List]()
-   * [BulletItem]()
-   * [NumberItem]()
-   * [Header]()
-   * [Footer]()
-   * [Horizontal Line]()
-   * [LineBreak]()
-   * [PageBreak]()
-   * [Table]()
-   * [Image]()
+* [Components](#components)
+   * [Document](#document-)
+   * [Text](#text-)
+   * [List](#list-)
+   * [BulletItem](#bulletitem-)
+   * [NumberItem](#numberitem-)
+   * [Header](#header-)
+   * [Footer](#footer-)
+   * [Horizontal Line](#hr-)
+   * [LineBreak](#linebreak-)
+   * [PageBreak](#pagebreak-)
+   * [Table](#table-)
+   * [Image](#image-)
 
 
 ## render(element, filepath)
 
-Render a React element into word document with supplied filepath and returns a top-level [document object]().
+Render a React element to word document with supplied filepath and returns a top-level [document object]().
 
 ### parameters
 
@@ -70,7 +70,7 @@ const DocumentComponent = () => (
   </Document>
 ```
 
-Data you can pass into `info` prop -
+Data that you can pass into `info` prop -
 
 ```
 {
@@ -257,8 +257,8 @@ Creates a table
 
 | Prop  | Type | Default | Description |
 | ------------- | ------------- | ------------- | ------------- |
-| `headers`  | `array`   |  `[]` | headings and corresponding styles for each heading (array of objects where each object has two properties, `value` and `styles`) |
-| `data`  | `array`   |  `[]` | data for each heading (array of arrays representing the data for each heading) |
+| `headers`  | `array`   |  `[]` | headings and corresponding style for each heading (array of objects where each object has two properties, `value` and `styles`) |
+| `data`  | `array`   |  `[]` | data for each heading (array of arrays where each array contains data for each heading) |
 | `style`  | `object`   |  `{}` | table styles |
 
 #### Example 
@@ -311,8 +311,8 @@ Adds an image
 | ------------- | ------------- | ------------- | ------------- |
 | `src`  | `string`   |   | image source |
 | `align`  | `string`   |  `left` | align the image |
-| `width`  | `string` \|\| `number`   |   | width of the image |
-| `height`  | `string` \|\| `number`    |  | height of the image |
+| `width`  | `number`   |   | width of the image |
+| `height`  | `number`    |  | height of the image |
 | `style`  | `object`   |  {} | style attributes of the image (height and image)|
 
 
