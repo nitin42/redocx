@@ -1,7 +1,7 @@
 import { render } from './renderer/render';
 
 /**
- * Component name (according to the createElement function)
+ * Component name (input to createElement function call after transpilation with Babel)
  */
 const Text = 'TEXT';
 const Image = 'IMAGE';
