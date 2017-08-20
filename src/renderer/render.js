@@ -7,11 +7,12 @@ import createElement from '../utils/createElement';
 import { WordRenderer } from './renderer';
 import parse from './parse';
 
+/* eslint-disable no-unused-expressions */
 /**
  * Open the doc app
  */
 function openDocApp(file) {
-  return (os.platform() === 'darwin' ? execa.shell(`open -a pages ${path.resolve(file)}`) : null);
+  (os.platform() === 'darwin' ? execa.shell(`open -a pages ${path.resolve(file)}`) : null);
 }
 
 /**
