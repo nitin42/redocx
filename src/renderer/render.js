@@ -11,7 +11,7 @@ import parse from './parse';
  * Open the doc app
  */
 function openDocApp(file) {
-  os.platform() === 'darwin' ? execa.shell(`open -a pages ${path.resolve(file)}`) : null;
+  return (os.platform() === 'darwin' ? execa.shell(`open -a pages ${path.resolve(file)}`) : null);
 }
 
 /**
@@ -24,9 +24,7 @@ function validateElement(element) {
   }
 
   if (typeof element === 'string') {
-    throw new Error(
-      "Invalid component element. Instead of passing string like 'text', pass a class or functional component. For example - <Document />"
-    );
+    throw new Error("Invalid component element. Instead of passing string like 'text', pass a class or functional component. For example - <Document />");
   }
   return true;
 }
@@ -72,7 +70,7 @@ async function render(element, filePath) {
   const output = await parse(container).toBuffer();
   const stream = fs.createWriteStream(filePath);
 
-  await new Promise(resolve => {
+  await new Promise((resolve) => {
     output.doc.generate(stream);
     console.log(`✨  Word document created at ${path.resolve(filePath)} !`);
     openDocApp(filePath);
