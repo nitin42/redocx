@@ -6,6 +6,10 @@
 
 > Create word documents with React
 
+<p align='center'>
+  <img src='./redocx.png' width='450' height='180' />
+</p>
+
 ## Introduction
 
 `redocx` is a library which lets you create word documents with React. It provides a set of components which renders your declarative views and components to word documents. 
