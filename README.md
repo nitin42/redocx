@@ -43,19 +43,17 @@ Let's get started!
 
 > Still in beta
 
-**npm**
+If babel presets and cli are not installed globablly, add them as dev dependencies: 
 
 ```
-npm install redocx --save
-```
+npm install --save-dev babel-cli babel-core babel-preset-env babel-preset-react babel-preset-stage-0
+npm install --save react redocx
 
-**yarn**
+# OR
 
+yarn add --dev babel-cli babel-core babel-preset-env babel-preset-react babel-preset-stage-0
+yarn add react redocx
 ```
-yarn add redocx
-```
-
-Assuming you've already installed [React](https://facebook.github.io/react).
 
 ## Usage
 
