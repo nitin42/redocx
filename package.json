@@ -1,6 +1,7 @@
 {
   "name": "redocx",
-  "version": "1.0.0-beta2",
+  "description": "Create word documents with React",
+  "version": "1.0.0-beta6",
   "main": "./lib/index.js",
   "license": "MIT",
   "files": [
@@ -12,7 +13,6 @@
     "fbjs": "^0.8.4",
     "minimatch": "^3.0.4",
     "officegen": "^0.4.5",
-    "prop-types": "^15.5.10",
     "react": "16.0.0-alpha.4",
     "react-dom": "16.0.0-alpha.4",
     "validator": "^8.0.0"
@@ -34,7 +34,8 @@
     "build": "NODE_ENV=production babel src -d lib",
     "test": "jest",
     "test:watch": "jest --watch",
-    "example": "babel-node ./demo/word.js",
+    "test:coverage": "jest --coverage",
+    "example": "babel-node ./demo/Word.js",
     "lint": "./node_modules/.bin/eslint ./src"
   },
   "jest": {
