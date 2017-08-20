@@ -4,7 +4,7 @@
 
 * [Introduction](https://github.com/nitin42/redocx#introduction)
 * [API Reference](https://github.com/nitin42/redocx/blob/master/docs/api.md#api-reference)
-   * [render](https://github.com/nitin42/redocx/blob/master/docs/api.md#render)
+   * [render](https://github.com/nitin42/redocx/blob/master/docs/api.md#renderelement-filepath)
    * [Document](https://github.com/nitin42/redocx/blob/master/docs/api.md#document-)
    * [Text](https://github.com/nitin42/redocx/blob/master/docs/api.md#text-)
    * [List](https://github.com/nitin42/redocx/blob/master/docs/api.md#list-)
@@ -30,4 +30,4 @@
   * [Horizontal Line](../examples/Hr.js)
   * [PageBreak](../examples/PageBreak.js)
   * [Table](../examples/Table.js)
-* [Contributing](https://github.com/nitin42/redocx/blob/master/CONTRIBUTING.MD)
+* [Contributing](https://github.com/nitin42/redocx/blob/master/CONTRIBUTING.md)
