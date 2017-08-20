@@ -40,13 +40,15 @@ Let's get started!
 
 ## Install
 
-> Still in beta
-
-If babel presets and cli are not installed globablly, add them as dev dependencies: 
+**Babel presets and cli**
 
 ```
 npm install --save-dev babel-cli babel-core babel-preset-env babel-preset-react babel-preset-stage-0
+```
 
+**react and redocx**
+
+```
 npm install --save react redocx
 ```
 
@@ -63,8 +65,6 @@ npm install --save react redocx
   ]
 }
 ```
-
-* Make sure you've installed [`babel-cli`](https://babeljs.io/docs/usage/cli/)
 
 * After configuring babel and assuming you've already created a file `example.js` with [this](#example) example, run `babel-node example.js`. This will render your React component to word document.
 
