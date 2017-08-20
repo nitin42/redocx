@@ -47,12 +47,8 @@ If babel presets and cli are not installed globablly, add them as dev dependenci
 
 ```
 npm install --save-dev babel-cli babel-core babel-preset-env babel-preset-react babel-preset-stage-0
+
 npm install --save react redocx
-
-# OR
-
-yarn add --dev babel-cli babel-core babel-preset-env babel-preset-react babel-preset-stage-0
-yarn add react redocx
 ```
 
 ## Usage
