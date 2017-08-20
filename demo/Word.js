@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TextComponent from '../examples/Text';
-import { render, Document } from '../src/';
+import { render, Document, Text } from '../src/';
 
 // Uncomment any of the below component to see what they render
 
@@ -17,9 +17,9 @@ class MyDocument extends Component {
 	render() {
 		return (
 			<Document>
-				<ListComponent />
+				<TableComponent />
 			</Document>
-		);
+		)
 	}
 }
 
