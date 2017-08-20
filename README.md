@@ -5,11 +5,6 @@
 ![status](https://img.shields.io/badge/status-beta-brightgreen.svg)
 
 > Create word documents with React
-<br/>
-<p align='center'>
-  <img src='./redocx.png' width='450' height='180'/>
-</p>
-
 
 ## Introduction
 
