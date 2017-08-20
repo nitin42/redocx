@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/nitin42/redocx.svg?branch=master)](https://travis-ci.org/nitin42/redocx)
 ![yarn](https://img.shields.io/badge/yarn-0.21.3-blue.svg)
 ![license](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![status](https://img.shields.io/badge/status-beta-brightgreen.svg)
+![status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 
 > Create word documents with React
 
