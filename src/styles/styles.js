@@ -3,7 +3,7 @@ import isHex from 'validator/lib/isHexadecimal';
 
 /**
  * Get the hex value or the color name
- * @param {string} value Hex or color name
+ * @param {string} value hex or color name
  */
 function getHexOrColor(value) {
   if (typeof value === 'undefined') {
@@ -87,7 +87,7 @@ function applyImageProps(props) {
 }
 
 /**
- * Function to serialize style properties for <Table /> component in accordance with open office xml
+ * Function to serialize style properties for <Table /> component according to open office xml
  * @param {Object} values style attributes for table
  */
 function styleSerializer(values) {
