@@ -28,7 +28,7 @@ npm install
 
 #### Test the changes locally
 
-You can test your changes locally in the [demo](../demo) folder. Make your changes to [`word.js`](../demo/Word.js) and run `npm run example`. This will render your views and components to `docx`.
+You can test your changes locally in the [demo](../demo) folder. Make your changes to [`word.js`](../demo/word.js) and run `npm run example`. This will render your views and components to `docx`.
 
 
 That's it! I am excited to see your pull request.
