@@ -18,7 +18,7 @@
 
 ## render(element, filepath)
 
-Render a React element to word document with supplied filepath and returns a top-level document object.
+Renders a React element to word document with supplied filepath and returns a top-level document object.
 
 ### parameters
 
