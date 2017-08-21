@@ -1,52 +1,8 @@
 import fs from 'fs';
-import path from 'path';
-import os from 'os';
-import minimatch from 'minimatch';
-import execa from 'execa';
 import createElement from '../utils/createElement';
 import { WordRenderer } from './renderer';
 import parse from './parse';
-
-/* eslint-disable no-unused-expressions */
-/**
- * Open the doc app
- */
-function openDocApp(file) {
-  (os.platform() === 'darwin' ? execa.shell(`open -a pages ${path.resolve(file)}`) : null);
-}
-
-/**
- * Document element
- * @param {Object} element 
- */
-function validateElement(element) {
-  if (element === undefined || element === null) {
-    throw new Error('Invalid component element.');
-  }
-
-  if (typeof element === 'string') {
-    throw new Error("Invalid component element. Instead of passing string like 'text', pass a class or functional component. For example - <Document />");
-  }
-  return true;
-}
-
-/**
- * Filepath for the document
- * @param {string} filePath 
- */
-function validatePath(filePath) {
-  if (filePath === null || filePath === undefined) {
-    throw new Error('Please specify a file path for the document');
-  }
-
-  const fileName = path.basename(filePath);
-  const pattern = '*.docx';
-
-  if (!minimatch(fileName, pattern)) {
-    throw new Error(`Invalid filename '${path.basename(filePath)}'. Make sure the extension is '.docx'`);
-  }
-  return true;
-}
+import { validateElement, validatePath, Events, openDocApp } from '../utils/renderUtils';
 
 /**
  * This function renders the component
@@ -56,13 +12,9 @@ function validatePath(filePath) {
 async function render(element, filePath) {
   const container = createElement('ROOT');
 
-  if (!validateElement(element)) {
-    return;
-  }
+  validateElement(element);
 
-  if (!validatePath(filePath)) {
-    return;
-  }
+  validatePath(filePath);
 
   const node = WordRenderer.createContainer(container);
 
@@ -71,11 +23,10 @@ async function render(element, filePath) {
   const output = await parse(container).toBuffer();
   const stream = fs.createWriteStream(filePath);
 
-  await new Promise((resolve) => {
-    output.doc.generate(stream);
-    console.log(`✨  Word document created at ${path.resolve(filePath)} !`);
+  await new Promise((resolve, reject) => {
+    output.doc.generate(stream, Events(filePath, resolve, reject));
+
     openDocApp(filePath);
-    resolve();
   });
 }
 
