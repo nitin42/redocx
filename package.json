@@ -45,8 +45,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "example": "./node_modules/.bin/babel-node ./demo/word.js",
-    "lint": "./node_modules/.bin/eslint ./src",
+    "example": "babel-node ./demo/word.js",
+    "lint": "eslint ./src",
     "prepublish": "npm run lint && npm run test && npm run build"
   },
   "jest": {
