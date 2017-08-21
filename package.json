@@ -2,20 +2,26 @@
   "name": "redocx",
   "description": "Create word documents with React",
   "version": "1.0.2",
+  "repository": "https://github.com/nitin42/redocx",
   "main": "./lib/index.js",
   "author": "Nitin Tulswani",
   "license": "MIT",
   "files": [
     "lib"
   ],
-  "keywords": [
-    "renderer",
-    "react",
-    "word documents",
-    "custom renderer",
-    "fiber"
-  ],
-  "repository": "https://github.com/nitin42/redocx",
+  "scripts": {
+    "prebuild": "rm -rf lib",
+    "build": "NODE_ENV=production babel src -d lib",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "example": "babel-node ./demo/word.js",
+    "lint": "eslint ./src",
+    "prepublish": "npm run lint && npm run test && npm run build"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "chroma-js": "^1.3.4",
     "execa": "^0.8.0",
@@ -39,17 +45,11 @@
     "eslint-plugin-import": "^2.7.0",
     "jest": "^20.0.4"
   },
-  "scripts": {
-    "prebuild": "rm -rf lib",
-    "build": "NODE_ENV=production babel src -d lib",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "example": "babel-node ./demo/word.js",
-    "lint": "eslint ./src",
-    "prepublish": "npm run lint && npm run test && npm run build"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  }
+  "keywords": [
+    "renderer",
+    "react",
+    "word documents",
+    "custom renderer",
+    "fiber"
+  ]
 }
