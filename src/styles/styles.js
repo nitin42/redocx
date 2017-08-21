@@ -15,7 +15,7 @@ function getHexOrColor(value) {
 }
 
 /**
- * Function to apply the styles to <Text /> component
+ * Function to apply the styles to a component
  * @param {Object} props Component props
  */
 function applyStyles(props) {
@@ -55,7 +55,7 @@ function applyStyles(props) {
 }
 
 /**
- * Function to apply attributes to <Image /> component through style prop
+ * Function to apply style attributes to <Image /> component
  * @param {Object} props Component props
  */
 function imageProps(props) {
@@ -68,7 +68,7 @@ function imageProps(props) {
 }
 
 /**
- * Function to apply attributes explicitly to <Image /> component
+ * Function to apply style attributes to <Image /> component without style prop 
  * @param {Object} Component props
  */
 function addStyles(props) {
