@@ -1,5 +1,7 @@
 # Styling 💄
 
+> glamorous-redocx is in progress which means you'll be able to style and render the components with [glamorous](https://github.com/paypal/glamorous).
+
 ## Style properties for the component
 Below are the style properties for Text, Document, List, Header, Footer, BulletItem and NumberItem components.
 
