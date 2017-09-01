@@ -68,7 +68,6 @@ npm install --save react redocx
 
 * After configuring babel and assuming you've already created a file `example.js` with [this](#example) example, run `babel-node example.js`. This will render your React component to word document.
 
-> `redocx` will soon have a new cli to automate this process making it easy to generate word documents with React!
 
 ## Demo
 
