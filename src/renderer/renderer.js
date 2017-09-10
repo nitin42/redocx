@@ -4,6 +4,8 @@ import ReactFiberReconciler from 'react-dom/lib/ReactFiberReconciler';
 import emptyObject from 'fbjs/lib/emptyObject';
 import createElement from '../utils/createElement';
 
+// Comments are for my own reference
+
 /**
  * Lifecyle of the renderer
  */
@@ -21,7 +23,12 @@ const WordRenderer = ReactFiberReconciler({
   ) {
     return createElement(type, props, rootContainerInstance);
   },
-
+  
+  /**
+   * Append the children. If children are wrapped inside a parent container, then push all the children
+   * inside it else we create a property called `document` on a parent node and append all the childrens
+   * to it and render them with `property_name.render()`.
+   */
   appendInitialChild(parentInstance, child) {
     if (parentInstance.appendChild) {
       parentInstance.appendChild(child);
@@ -134,7 +141,7 @@ const WordRenderer = ReactFiberReconciler({
   commitTextUpdate(textInstance, oldText, newText) {
     textInstance.chidren = newText;
   },
-
+  
   useSyncScheduling: true,
 });
 
