@@ -9,8 +9,8 @@ const parse = (input) => {
     const document = inputComponent.document;
 
     await document.render();
-  
-    // Return the input component again because we rendered the children which weren't wrapped inside a parent.
+    // Return the input component again because we rendered the children
+    // which weren't wrapped inside a parent.
     // We async called the render method on all of the children.
     return inputComponent;
   }
