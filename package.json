@@ -1,7 +1,7 @@
 {
   "name": "redocx",
   "description": "Create word documents with React",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": "https://github.com/nitin42/redocx",
   "main": "./lib/index.js",
   "author": "Nitin Tulswani",
