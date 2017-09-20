@@ -6,7 +6,7 @@ The [render]() method returns a top-level document object. This object contains 
 includes document information (author, description, title, etc) and the component instance, which further includes information about
 children, props, root instance.
 
-Something like this - 
+High level picture -
 
 ```
 document:
