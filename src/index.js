@@ -1,4 +1,4 @@
-import { render } from './renderer/render';
+import { render, createBuffer } from './renderer/render';
 import Platform from './utils/platform';
 
 /**
@@ -35,4 +35,5 @@ export {
   Footer,
   Platform,
   render,
+  createBuffer
 };

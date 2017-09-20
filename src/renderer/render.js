@@ -3,24 +3,57 @@ import createElement from '../utils/createElement';
 import { WordRenderer } from './renderer';
 import parse from './parse';
 import { validateElement, validatePath, Events, openDocApp } from '../utils/renderUtils';
+import { Writable } from 'stream';
+import { Buffer } from 'buffer';
+
+class BufferWriteStream extends Writable {
+  constructor() {
+    super(...arguments);
+    this.data = [];
+  }
+
+  getBuffer() {
+    return Buffer.concat(this.data);
+  }
+
+  _write(buffer) {
+    console.log('write', buffer)
+    this.data.push(buffer);
+  }
+}
 
 /**
  * This function renders the component
  * @param {Object} element
  * @param {string} filePath 
  */
-async function render(element, filePath) {
+
+async function createParsedDocument(element) {
   const container = createElement('ROOT');
-
   validateElement(element);
-
-  validatePath(filePath);
-
   const node = WordRenderer.createContainer(container);
-
   WordRenderer.updateContainer(element, node, null);
-
   const output = await parse(container).toBuffer();
+  return output;
+}
+
+async function createBuffer(element) {
+  const parsedDoc = await createParsedDocument(element);
+  const stream = new BufferWriteStream();
+  return new Promise((resolve, reject) => {
+    parsedDoc.doc.generate(stream, {
+      error: reject,
+      finalize(written) {
+        console.log('finalie', written)
+        process.nextTick(() => console.log(stream.data.length))
+      }
+    });
+  })
+}
+
+async function render(element, filePath) {
+  validatePath(filePath);
+  const output = await createParsedDocument(element);
   const stream = fs.createWriteStream(filePath);
 
   await new Promise((resolve, reject) => {
@@ -42,4 +75,4 @@ function testRenderer(element) {
   return container;
 }
 
-export { render, testRenderer };
+export { render, testRenderer, createBuffer };
