@@ -10,7 +10,7 @@
     "lib"
   ],
   "scripts": {
-    "prebuild": "rm -rf lib",
+    "prebuildOnly": "rm -rf lib",
     "build": "NODE_ENV=production babel src -d lib",
     "test": "jest",
     "test:watch": "jest --watch",
