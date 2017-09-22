@@ -10,14 +10,19 @@
     "lib"
   ],
   "scripts": {
-    "prebuildOnly": "rm -rf lib",
     "build": "NODE_ENV=production babel src -d lib",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "example": "babel-node ./demo/word.js",
     "lint": "eslint ./src",
-    "prepublish": "npm run lint && npm run test && npm run build"
+    "prebuild": "rm -rf ./lib"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --no-semi --write",
+      "git add"
+    ]
   },
   "jest": {
     "testEnvironment": "node"
@@ -43,7 +48,9 @@
     "eslint": "^4.4.1",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-plugin-import": "^2.7.0",
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "lint-staged": "^4.2.1",
+    "prettier": "^1.7.0"
   },
   "keywords": [
     "renderer",
