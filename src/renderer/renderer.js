@@ -103,9 +103,6 @@ const WordRenderer = ReactFiberReconciler({
     return emptyObject;
   },
 
-  /**
-   * Test utils
-   */
   getPublicInstance(inst) {
     return inst;
   },
