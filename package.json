@@ -34,7 +34,6 @@
     "minimatch": "^3.0.4",
     "officegen": "^0.4.5",
     "react": "16.0.0-alpha.4",
-    "react-dom": "16.0.0-alpha.4",
     "validator": "^8.0.0"
   },
   "devDependencies": {
