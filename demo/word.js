@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TextComponent from '../examples/Text';
-import { render, Document, Text } from '../src/';
+import { render, createBuffer, Document, Text } from '../src/';
 
 // Uncomment any of the below component to see what they render
 
@@ -23,4 +23,6 @@ class MyDocument extends Component {
 	}
 }
 
-render(<MyDocument />, `${__dirname}/text.docx`);
+// render(<MyDocument />, `${__dirname}/text.docx`);
+
+createBuffer(<MyDocument />).then((buf) => console.log('resolve', buf.toString())).catch(console.error);
