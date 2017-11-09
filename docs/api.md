@@ -14,7 +14,7 @@
    * [PageBreak](#pagebreak-)
    * [Table](#table-)
    * [Image](#image-)
-   * [Platform](#platform-)
+   * [Platform](#platform)
 
 
 ## render(element, filepath)
