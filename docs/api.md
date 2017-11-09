@@ -14,6 +14,7 @@
    * [PageBreak](#pagebreak-)
    * [Table](#table-)
    * [Image](#image-)
+   * [Platform](#platform-)
 
 
 ## render(element, filepath)
@@ -323,3 +324,24 @@ const ImageComponent = () => (
   <Image src='./xyz/one.png' align='center' width='200' height='200' />
 )
 ```
+
+### Platform
+
+A lot of other custom renderers ([react-sketchapp](https://github.com/airbnb/react-sketchapp), [react-tv](https://github.com/raphamorim/react-tv) all have it). It's useful for platform differences within universal components. Thanks to [Peggy Rayzis](https://twitter.com/peggyrayzis)!
+
+#### Usage
+
+```js
+import { Platform } from 'redocx'
+
+Platform.OS // 'word'
+
+const obj = {
+  word: { // some platform specific code that you want to run }
+}
+
+// Then use it like this
+Platform.select(obj)
+```
+
+> It's still experimental and may change in future.
