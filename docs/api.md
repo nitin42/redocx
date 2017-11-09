@@ -337,7 +337,7 @@ import { Platform } from 'redocx'
 Platform.OS // 'word'
 
 const obj = {
-  word: { // some platform specific code that you want to run }
+  word: { /** some platform specific code that you want to run **/ }
 }
 
 // Then use it like this
