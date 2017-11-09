@@ -17,10 +17,10 @@ class MyDocument extends Component {
 	render() {
 		return (
 			<Document>
-				<TableComponent />
+				<TextComponent />
 			</Document>
 		)
 	}
 }
 
-render(<MyDocument />, `${__dirname}/text.docx`);
+render(<MyDocument />, `${__dirname}/HelloWorld.docx`);

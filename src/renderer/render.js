@@ -1,5 +1,5 @@
 import fs from 'fs';
-import createElement from '../utils/createElement';
+import {createElement} from '../utils/createElement';
 import { WordRenderer } from './renderer';
 import parse from './parse';
 import { validateElement, validatePath, Events, openDocApp } from '../utils/renderUtils';

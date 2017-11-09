@@ -1,147 +1,121 @@
 /* eslint-disable */
 
-import ReactFiberReconciler from 'react-dom/lib/ReactFiberReconciler';
-import emptyObject from 'fbjs/lib/emptyObject';
-import createElement from '../utils/createElement';
+import emptyObject from 'fbjs/lib/emptyObject'
+const Reconciler = require('react-reconciler')
 
-// Comments are for my own reference
+import { createElement, getHostContextNode } from '../utils/createElement'
 
-/**
- * Lifecyle of the renderer
- */
-const WordRenderer = ReactFiberReconciler({
+const RendererHostConfig = {
+	appendInitialChild(parentInstance, child) {
+		if (parentInstance.appendChild) {
+			parentInstance.appendChild(child)
+		} else {
+			parentInstance.document = child
+		}
+	},
 
-  /**
-   * Create component instance
-   */
-  createInstance(
-    type,
-    props,
-    rootContainerInstance,
-    hostContext,
-    internalInstanceHandle,
-  ) {
-    return createElement(type, props, rootContainerInstance);
-  },
-  
-  /**
-   * Append the children. If children are wrapped inside a parent container, then push all the children
-   * inside it else we create a property called `document` on a parent node and append all the childrens
-   * to it and render them with `property_name.render()`.
-   */
-  appendInitialChild(parentInstance, child) {
-    if (parentInstance.appendChild) {
-      parentInstance.appendChild(child);
-    } else {
-      parentInstance.document = child;
-    }
-  },
+	createInstance(type, props, internalInstanceHandle) {
+		return createElement(type, props)
+	},
 
-  appendChild(parentInstance, child) {
-    if (parentInstance.appendChild) {
-      parentInstance.appendChild(child);
-    } else {
-      parentInstance.document = child;
-    }
-  },
+	createTextInstance(text, rootContainerInstance, internalInstanceHandle) {
+		return text
+	},
 
-  removeChild(parentInstance, child) {
-    parentInstance.removeChild(child);
-  },
+	finalizeInitialChildren(wordElement, type, props) {
+		return false
+	},
 
-  insertBefore(parentInstance, child, beforeChild) {
-    // noob
-  },
+	getPublicInstance(inst) {
+		return inst
+	},
 
-  /**
-   * Final call / check before flushing to the host environment
-   */
-  finalizeInitialChildren(testElement, type, props, rootContainerInstance) {
-    return false;
-  },
+	prepareForCommit() {
+		// noop
+	},
 
-  /**
-   * Prepare the update with new props
-   */
-  prepareUpdate(testElement, type, oldProps, newProps, hostContext) {
-    return true;
-  },
+	prepareUpdate(wordElement, type, oldProps, newProps) {
+		return true
+	},
 
-  /**
-   * Commit the update (diff the old and new props)
-   */
-  commitUpdate(
-    instance,
-    type,
-    oldProps,
-    newProps,
-    rootContainerInstance,
-    internalInstanceHandle,
-  ) {
-    // noop
-  },
+	resetAfterCommit() {
+		// noop
+	},
 
-  commitMount(
-    instance,
-    type,
-    newProps,
-    rootContainerInstance,
-    internalInstanceHandle,
-  ) {
-    // noop
-  },
+	resetTextContent(wordElement) {
+		// Redocx does not have a text node like DOM
+	},
 
-  /**
-   * Keeps track of the current location in tree
-   */
+	// If you've such use case where you need to provide data from the root instance,
+	// see the below example. This may help you in creating your own custom renderer
+	
+	createInstance(type, props, internalInstanceHandle) {
+		// 'internalInstanceHandle' is not transparent here. So use host context methods
+		// to get data from roots
+		return createElement(type, props)
+	},
 
-  getRootHostContext() {
-    return emptyObject;
-  },
+	// Use this current instance to pass data from root
+	getRootHostContext(instance) {
+		// getHostContextNode here updates the internal state of createElement and stores a ref to current instance
+    return getHostContextNode(instance)
+	},
 
-  getChildHostContext() {
-    return emptyObject;
-  },
+	getChildHostContext() {
+		return emptyObject
+	},
 
-  getPublicInstance(inst) {
-    return inst;
-  },
+	shouldSetTextContent(type, props) {
+		return false // Redocx does not have a text node like DOM
+	},
 
-  /**
-   * Disable callbacks during DOM manipulation
-   */
-  prepareForCommit() {
-    // noop
-  },
+	now: () => {},
 
-  resetAfterCommit() {
-    // noop
-  },
+	useSyncScheduling: true,
 
-  shouldSetTextContent(props) {
-    return false;
-  },
+	mutation: {
+		appendChild(parentInstance, child) {
+			if (parentInstance.appendChild) {
+				parentInstance.appendChild(child)
+			} else {
+				parentInstance.document = child
+			}
+		},
 
-  resetTextContent(testElement) {
-    // noop
-  },
+		appendChildToContainer(parentInstance, child) {
+			if (parentInstance.appendChild) {
+				parentInstance.appendChild(child)
+			} else {
+				parentInstance.document = child
+			}
+		},
 
-  createTextInstance(
-    text,
-    rootContainerInstance,
-    hostContext,
-    internalInstanceHandle,
-  ) {
-    return text;
-  },
+		removeChild(parentInstance, child) {
+			parentInstance.removeChild(child)
+		},
 
-  commitTextUpdate(textInstance, oldText, newText) {
-    textInstance.chidren = newText;
-  },
-  
-  useSyncScheduling: true,
-});
+		removeChildFromContainer(parentInstance, child) {
+			parentInstance.removeChild(child)
+		},
 
-export {
-  WordRenderer,
-};
+		insertBefore(parentInstance, child, beforeChild) {
+			// noob
+		},
+
+		commitUpdate(instance, updatePayload, type, oldProps, newProps) {
+			// noop
+		},
+
+		commitMount(instance, updatePayload, type, oldProps, newProps) {
+			// noop
+		},
+
+		commitTextUpdate(textInstance, oldText, newText) {
+			textInstance.children = newText
+		},
+	},
+}
+
+const WordRenderer = Reconciler(RendererHostConfig)
+
+export { WordRenderer }
