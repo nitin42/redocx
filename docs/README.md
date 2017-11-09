@@ -17,7 +17,7 @@
    * [PageBreak](https://github.com/nitin42/redocx/blob/master/docs/api.md#pagebreak-)
    * [Table](https://github.com/nitin42/redocx/blob/master/docs/api.md#table-)
    * [Image](https://github.com/nitin42/redocx/blob/master/docs/api.md#image-)
-   * [Platform](https://github.com/nitin42/redocx/blob/master/docs/api.md#platform-)
+   * [Platform](https://github.com/nitin42/redocx/blob/master/docs/api.md#platform)
 * [Styling](https://github.com/nitin42/redocx/blob/master/docs/styling.md)
   * [Components](https://github.com/nitin42/redocx/blob/master/docs/styling.md#style-properties-for-the-component)
   * [Images](https://github.com/nitin42/redocx/blob/master/docs/styling.md#style-attributes-for-image--component)
