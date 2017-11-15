@@ -18,7 +18,7 @@ class NumberItem extends Root {
 
   removeChild(child) {
     const index = this.children.indexOf(child);
-    this.children.slice(index, 1);
+    this.children.splice(index, 1);
   }
 
   async renderChildren(align, styles) {
