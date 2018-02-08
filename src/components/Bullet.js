@@ -9,7 +9,6 @@ class BulletItem extends Root {
     super(root, props);
     this.root = root;
     this.props = props;
-    this.adder = this.root.doc.createListOfDots();
   }
 
   appendChild(child) {
@@ -22,6 +21,7 @@ class BulletItem extends Root {
   }
 
   async renderChildren(align, styles) {
+    this.adder = this.root.doc.createListOfDots();
     await renderNodes(align, null, styles, this.adder, this.children, this.props);
   }
 

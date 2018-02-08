@@ -7,11 +7,11 @@ class PageBreak extends Root {
   constructor(root, props) {
     super(root, props);
     this.root = root;
-    this.adder = this.root.doc.putPageBreak();
   }
 
   async render() {
-    await this.adder;
+
+    await this.root.doc.putPageBreak();
   }
 }
 

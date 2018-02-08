@@ -14,7 +14,6 @@ class Text extends Root {
     super(root, props);
     this.root = root;
     this.props = props;
-    this.adder = this.root.doc.createP();
     validateTextProps(this.props);
   }
 
@@ -62,6 +61,10 @@ class Text extends Root {
   }
 
   async renderChildren(align, styles) {
+    // 创建操作对象应该在回调函数进行，在构造方法中创建会导致和其他类型组件一起排版
+    // createP should be in a renderChildren function,
+    // In the constructor to create leads to typeset together with other types of components
+    this.adder = this.root.doc.createP();
     alignChildren(this.adder, align, this.props.align);
 
     for (let i = 0; i < this.children.length; i += 1) {
