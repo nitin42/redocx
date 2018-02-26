@@ -59,7 +59,7 @@ function validateTableProps(props) {
 function headerValidators(props) {
   const { headers } = props;
   const headerSchema = ['value', 'styles'];
-  const styleSchema = ['bold', 'size', 'color', 'align', 'vAlign', 'fontFamily', 'fill'];
+  const styleSchema = ['bold', 'size', 'color', 'align', 'vAlign', 'fontFamily', 'fill', 'cellColWidth'];
 
   headers.forEach((header) => {
     Object.keys(header).forEach((key) => {
