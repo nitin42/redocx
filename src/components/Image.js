@@ -19,7 +19,14 @@ class Image extends Root {
   }
 
   async renderImage(align) {
-    this.adder = this.root.doc.createP();
+    // “≥√º±Í÷æ
+    if (this.props.headFootFlag === 'head') {
+      this.adder = this.root.doc.getHeader().createP();
+    } else if (this.props.headFootFlag === 'foot') {
+      this.adder = this.root.doc.getFooter().createP();
+    } else {
+      this.adder = this.root.doc.createP();
+    }
 
     // Align the image with context by Document or through component prop 'align'
     alignChildren(this.adder, align, this.props.align);
