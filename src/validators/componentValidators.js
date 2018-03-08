@@ -87,7 +87,7 @@ function headerValidators(props) {
 function tableStyleValidators(props) {
   const { style } = props;
   const styleKeys = Object.keys(style || {});
-  const tableStyleSchema = ['tableColWidth', 'tableSize', 'tableColor', 'tableAlign', 'borders', 'tableRowHeight'];
+  const tableStyleSchema = ['tableColWidth', 'tableSize', 'tableColor', 'tableAlign', 'borders', 'tableRowHeight', 'tableRowCantSplit'];
 
   styleKeys.forEach((key) => {
     if (!tableStyleSchema.includes(key)) {
