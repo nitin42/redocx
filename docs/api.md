@@ -327,7 +327,7 @@ const ImageComponent = () => (
 
 ### Platform
 
-A lot of other custom renderers ([react-sketchapp](https://github.com/airbnb/react-sketchapp), [react-tv](https://github.com/raphamorim/react-tv) all have it). It's useful for platform differences within universal components. Thanks to [Peggy Rayzis](https://twitter.com/peggyrayzis)!
+A lot of other custom renderers ([react-sketchapp](https://github.com/airbnb/react-sketchapp), [react-tv](https://github.com/raphamorim/react-tv) all have it). It's useful for platform differences within universal components.
 
 #### Usage
 
