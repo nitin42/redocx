@@ -3,7 +3,7 @@
     [
       "env",
       {
-				"exclude": ["transform-regenerator"]
+        "exclude": ["transform-regenerator"]
       }
     ],
     "stage-0",
