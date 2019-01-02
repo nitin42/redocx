@@ -12,7 +12,6 @@ function hoc(component, fn) {
     constructor(root, props) {
       this.root = root;
       this.props = props;
-      this.adder = fn === 'getHeader' ? this.root.doc.getHeader().createP() : this.root.doc.getFooter().createP();
     }
 
     appendChild(child) {
@@ -25,6 +24,7 @@ function hoc(component, fn) {
     }
 
     async renderChildren(align, styles) {
+      this.adder = fn === 'getHeader' ? this.root.doc.getHeader().createP() : this.root.doc.getFooter().createP();
       await renderNodes(align, this.props.align, styles, this.adder, this.children, this.props);
     }
 

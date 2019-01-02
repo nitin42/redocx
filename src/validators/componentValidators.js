@@ -59,7 +59,7 @@ function validateTableProps(props) {
 function headerValidators(props) {
   const { headers } = props;
   const headerSchema = ['value', 'styles'];
-  const styleSchema = ['bold', 'size', 'color', 'align', 'vAlign', 'fontFamily', 'fill'];
+  const styleSchema = ['bold', 'size', 'color', 'align', 'vAlign', 'fontFamily', 'fill', 'cellColWidth'];
 
   headers.forEach((header) => {
     Object.keys(header).forEach((key) => {
@@ -87,7 +87,7 @@ function headerValidators(props) {
 function tableStyleValidators(props) {
   const { style } = props;
   const styleKeys = Object.keys(style || {});
-  const tableStyleSchema = ['tableColWidth', 'tableSize', 'tableColor', 'tableAlign', 'borders'];
+  const tableStyleSchema = ['tableColWidth', 'tableSize', 'tableColor', 'tableAlign', 'borders', 'tableRowHeight', 'tableRowCantSplit'];
 
   styleKeys.forEach((key) => {
     if (!tableStyleSchema.includes(key)) {
@@ -101,7 +101,7 @@ function tableStyleValidators(props) {
  * @param {Object} props Component props
  */
 function validateTextProps(props) {
-  const knownProps = ['style', 'align', 'children'];
+  const knownProps = ['style', 'align', 'children', 'firstLine', 'spacing'];
   const takesProps = Object.keys(props || {});
 
   takesProps.forEach((prop) => {

@@ -4,7 +4,7 @@ import { applyStyles } from '../styles/styles';
 /**
  * This component wraps all the children (string, components) and renders them.
  * It only takes two props, 'align' for alignment of the document and 'info' for adding
- * document information like name of the author and description of the document. 
+ * document information like name of the author and description of the document.
  */
 
 class Document {
@@ -14,10 +14,7 @@ class Document {
   constructor(root, props) {
     this.root = root;
     this.props = props;
-    // Create a new paragraph
-    this.adder = this.root.doc.createP();
-    // Align the children which are of type string
-    this.adder.options.align = this.props.align;
+
     // Add document information
     Object.assign(this.root.doc.options, this.props.info ? this.props.info : {});
     // Validate the component props
@@ -36,6 +33,10 @@ class Document {
   async renderChildren() {
     for (let i = 0; i < this.children.length; i += 1) {
       if (typeof this.children[i] === 'string') {
+        // Create a new paragraph
+        this.adder = this.root.doc.createP();
+        // Align the children which are of type string
+        this.adder.options.align = this.props.align;
         // If not a component, render it as a paragraph
         await this.adder.addText(
           this.children[i], this.props.style ? applyStyles(this.props.style) : {},

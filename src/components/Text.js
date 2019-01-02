@@ -14,7 +14,6 @@ class Text extends Root {
     super(root, props);
     this.root = root;
     this.props = props;
-    this.adder = this.root.doc.createP();
     validateTextProps(this.props);
   }
 
@@ -62,7 +61,20 @@ class Text extends Root {
   }
 
   async renderChildren(align, styles) {
+    // 创建操作对象应该在回调函数进行，在构造方法中创建会导致和其他类型组件一起排版
+    // createP should be in a renderChildren function,
+    // In the constructor to create leads to typeset together with other types of components
+    this.adder = this.root.doc.createP();
+    // 对齐
     alignChildren(this.adder, align, this.props.align);
+
+    // 段首缩进firstLine:'240'
+    // 段前间距spacing.before
+    // 段后间距spacing.after
+    // 行间距spacing.line
+    // docx.createP ({firstLine:'240', spacing : {before: '340', after: '330', line: '578'}});
+    this.props.firstLine && (this.adder.options.firstLine = this.props.firstLine);
+    this.props.spacing && (this.adder.options.spacing = this.props.spacing);
 
     for (let i = 0; i < this.children.length; i += 1) {
       if (typeof this.children[i] === 'string') {
