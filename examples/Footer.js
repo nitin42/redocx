@@ -5,7 +5,7 @@ class FooterComponent extends Component {
   render () {
     return (
       <Document>
-        <Footer style={{ color: 'red', fontFamily: 'Tahoma' }} align='center'>Heading</Footer>
+        <Footer style={{ color: 'red', fontFamily: 'Tahoma' }} align='center'>Footer</Footer>
       </Document>
     );
   }

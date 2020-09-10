@@ -20,11 +20,18 @@ class Image extends Root {
 
   async renderImage(align) {
     this.adder = this.root.doc.createP();
+    const base64Pattern = /^data:image\/\w+;base64,/
 
     // Align the image with context by Document or through component prop 'align'
     alignChildren(this.adder, align, this.props.align);
 
-    await this.adder.addImage(path.resolve(this.props.src), applyImageProps(this.props));
+    if (base64Pattern.test(this.props.src)) {
+      var data = this.props.src.replace(base64Pattern, "");
+      var buffer = Buffer.from(data, "base64");
+      await this.adder.addImage(buffer, applyImageProps(this.props));
+    } else {
+      await this.adder.addImage(path.resolve(this.props.src), applyImageProps(this.props));
+    }
   }
 
   async render(align) {
